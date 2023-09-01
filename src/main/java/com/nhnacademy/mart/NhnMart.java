@@ -1,6 +1,11 @@
 package com.nhnacademy.mart;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class NhnMart {
+
+    private static final Logger logger = LoggerFactory.getLogger(NhnMart.class);
 
     private final FoodStand foodStand = new FoodStand();
 
@@ -10,6 +15,7 @@ public class NhnMart {
 
     // 음식 세팅
     private void fillFoodStand() {
+        logger.info("상품 준비");
         for (int i = 0; i < 2; i++) {
             foodStand.add(new Food("양파", 1_000));
         }
@@ -22,6 +28,7 @@ public class NhnMart {
         for (int i = 0; i < 20; i++) {
             foodStand.add(new Food("사과", 2_000));
         }
+        logger.info("상품 준비 완료");
     }
 
     public Basket provideBasket() {
