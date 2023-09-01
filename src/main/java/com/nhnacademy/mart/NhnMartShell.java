@@ -37,6 +37,7 @@ public class NhnMartShell {
         for (int i = 0; i < list.length; i = i + 2) {
             buyList.add(list[i], Integer.parseInt(list[i + 1]));
         }
+        s.close();
         return buyList;
     }
 }
