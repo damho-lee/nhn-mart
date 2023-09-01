@@ -27,4 +27,12 @@ public class NhnMart {
     public Basket provideBasket() {
         return new Basket();
     }
+
+    public Object getFoodStand() {
+
+    }
+
+    public Object getCounter() {
+        return null;
+    }
 }

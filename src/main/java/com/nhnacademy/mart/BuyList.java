@@ -7,12 +7,12 @@ public class BuyList {
     private final ArrayList<Item> items = new ArrayList<>();
 
     // TODO add 메서드 생성
+    public void add() {
 
+    }
 
     public static class Item {
         private final String name;
         private final int amount;
-
-
     }
 }
