@@ -32,7 +32,7 @@ public class NhnMart {
         return this.foodStand;
     }
 
-    public Object getCounter() {
-        return null;
+    public Counter getCounter() {
+        return new Counter();
     }
 }

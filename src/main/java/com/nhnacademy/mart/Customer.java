@@ -27,9 +27,11 @@ public class Customer {
     }
 
     // TODO payTox 메서드 구현
-    public void payTox(Object counter) {
-
+    public void payTox(Counter counter) {
+        int payment = counter.pay(basket);
+        if (payment >20000) {
+            throw new IllegalArgumentException("돈을 초과하는 상품 구매");
+        }
+        System.out.println("고객님 결제 후 잔액 : " + (20000-payment));
     }
-
-
 }
