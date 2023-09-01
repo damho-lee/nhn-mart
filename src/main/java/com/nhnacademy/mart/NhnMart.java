@@ -3,6 +3,9 @@ package com.nhnacademy.mart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * NhnMart 클래스입니다.
+ */
 public class NhnMart {
 
     private static final Logger logger = LoggerFactory.getLogger(NhnMart.class);
@@ -13,7 +16,10 @@ public class NhnMart {
         fillFoodStand();
     }
 
-    // 음식 세팅
+    /**
+     * fillFoodStand() 메서드 입니다.
+     * 진열대에 상품(food) 놓기.
+     */
     private void fillFoodStand() {
         logger.info("상품 준비");
         for (int i = 0; i < 2; i++) {
@@ -31,14 +37,27 @@ public class NhnMart {
         logger.info("상품 준비 완료");
     }
 
+    /**
+     * provideBasket() 메서드입니다.
+     *
+     * @return Basket() .
+     */
     public Basket provideBasket() {
         return new Basket();
     }
 
+    /**
+     * getter() 메서드 입니다.
+     */
     public FoodStand getFoodStand() {
         return this.foodStand;
     }
 
+    /**
+     * getCounter() 메서드입니다.
+     *
+     * @return Counter .
+     */
     public Counter getCounter() {
         return new Counter();
     }

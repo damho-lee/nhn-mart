@@ -4,17 +4,23 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * NhnMartShell 클래스입니다.
+ * main method 포함.
+ */
 
 public class NhnMartShell {
     private static final Logger logger = LoggerFactory.getLogger(NhnMartShell.class);
 
+    /**
+     * main 메서드입니다.
+     */
     public static void main(String[] args) {
         NhnMart mart = new NhnMart();
         mart.prepareMart();
 
         BuyList buyList = inputBuyListFromShell();
 
-        // TODO 본인이름 영어로 변수명 작성!
         // 본인이름을 각자 맞게 영어로 변경
         // 홍길동 학생
         // -> hongGilDong or gilDong
@@ -30,13 +36,17 @@ public class NhnMartShell {
         damho.payTox(mart.getCounter());
     }
 
+    /**
+     * inputBuyListFromShell 메서드입니다.
+     *
+     * @return buyList
+     */
     private static BuyList inputBuyListFromShell() {
-        // TODO Scanner 입력을 받아 buyList 만들기
         Scanner s = new Scanner(System.in);
         System.out.println("NHN 마트에 오신 것을 환영합니다. 사고 싶은 물건을 골라주세요.");
         System.out.print("\n> ");
-        String input_buyList = s.nextLine();
-        String[] list = input_buyList.split(" ");
+        String inputBuyList = s.nextLine();
+        String[] list = inputBuyList.split(" ");
         BuyList buyList = new BuyList();
         for (int i = 0; i < list.length; i = i + 2) {
             try {

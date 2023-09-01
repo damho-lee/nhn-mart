@@ -5,6 +5,9 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * FoodStand 클래스입니다.
+ */
 public class FoodStand {
     private static final Logger logger = LoggerFactory.getLogger(FoodStand.class);
     private final ArrayList<Food> foods = new ArrayList<>();
@@ -13,12 +16,22 @@ public class FoodStand {
         return foods;
     }
 
-    // TODO add 메서드 구현
+    /**
+     * add 메서드입니다.
+     *
+     * @param food .
+     */
     public void add(Food food) {
         foods.add(food);
     }
 
-    // TODO 장바구니에 담은 Food 삭제 구현
+    /**
+     * delete 메서드입니다.
+     *
+     * @param name .
+     *
+     * @return Food .
+     */
     public Food delete(String name) {
         Food returnFood = null;
         for (Food food : foods) {

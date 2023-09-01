@@ -3,6 +3,10 @@ package com.nhnacademy.mart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 고객 역할의 Customer 클래스 입니다.
+ */
+
 public class Customer {
     private static final Logger logger = LoggerFactory.getLogger(Customer.class);
 
@@ -18,23 +22,38 @@ public class Customer {
     }
 
     // 장바구니 챙기기
+
+    /**
+     * bring 메서드입니다.
+     *
+     * @Param basket .
+     */
     public void bring(Basket basket) {
         this.basket = basket;
         logger.info("장바구니 들기");
     }
 
-    // TODO pickFoods 메서드 구현
+    /**
+     * pickFoods 메서드입니다.
+     *
+     * @param foodStand .
+     */
     public void pickFoods(FoodStand foodStand) {
         for (BuyList.Item item : buyList.getItems()) {
             for (int i = 0; i < item.getAmount(); i++) {
                 Food food = foodStand.delete(item.getName());
                 basket.add(food);
-                logger.info("name : {}, price : {} 상품 장바구니에 넣기 성공.", food.getName(), food.getPrice());
+                logger.info("name : {}, price : {} 상품 장바구니에 넣기 성공.",
+                        food.getName(), food.getPrice());
             }
         }
     }
 
-    // TODO payTox 메서드 구현
+    /**
+     * payTox 메서드 입니다.
+     *
+     * @param counter .
+     */
     public void payTox(Counter counter) {
         int payment = counter.pay(basket);
         if (payment > 20000) {

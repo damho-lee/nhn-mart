@@ -3,10 +3,19 @@ package com.nhnacademy.mart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Counter 클래스입니다.
+ */
 public class Counter {
     private static final Logger logger = LoggerFactory.getLogger(Counter.class);
 
-    // TODO pay 메서드 구현 (카운터에서 계산 처리 메서드)
+    /**
+     * pay 메서드입니다.
+     *
+     * @param basket .
+     *
+     * @return int형 basket안의 물품들의 가격 총합.
+     */
     public int pay(Basket basket) {
         int sum = 0;
         for (Food food : basket.getFoods()) {
