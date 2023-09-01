@@ -80,3 +80,7 @@
 2023-09-01 17:07:22,757 [main] INFO c.n.m.Customer [Customer.java:32] - name : 양파, price : 1000 상품 장바구니에 넣기 성공.
 2023-09-01 17:07:22,757 [main] INFO c.n.m.Customer [Customer.java:32] - name : 양파, price : 1000 상품 장바구니에 넣기 성공.
 2023-09-01 17:07:22,758 [main] ERROR c.n.m.FoodStand [FoodStand.java:32] - 식품 매대에 없는 상품 구매
+2023-09-01 17:50:59,609 [main] INFO c.n.m.NhnMart [NhnMart.java:24] - 상품 준비
+2023-09-01 17:50:59,611 [main] INFO c.n.m.NhnMart [NhnMart.java:37] - 상품 준비 완료
+2023-09-01 18:00:19,580 [main] ERROR c.n.m.FoodStand [Food.java:19] - price가 0원보다 작을 수 없습니다.
+상품 준비 실패
