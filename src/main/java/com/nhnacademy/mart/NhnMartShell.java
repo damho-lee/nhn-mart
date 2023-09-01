@@ -1,5 +1,7 @@
 package com.nhnacademy.mart;
 
+import java.util.Scanner;
+
 public class NhnMartShell {
 
     public static void main(String[] args) {
@@ -26,11 +28,15 @@ public class NhnMartShell {
 
     private static BuyList inputBuyListFromShell() {
         // TODO Scanner 입력을 받아 buyList 만들기
-
+        Scanner s = new Scanner(System.in);
+        System.out.println("NHN 마트에 오신 것을 환영합니다. 사고 싶은 물건을 골라주세요.");
+        System.out.print("\n> ");
+        String input_buyList = s.nextLine();
+        String[] list = input_buyList.split(" ");
         BuyList buyList = new BuyList();
-
-        buyList.add(???);
-
-        return null;
+        for (int i = 0; i < list.length; i = i + 2) {
+            buyList.add(list[i], Integer.parseInt(list[i + 1]));
+        }
+        return buyList;
     }
 }

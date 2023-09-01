@@ -29,7 +29,7 @@ public class NhnMart {
     }
 
     public Object getFoodStand() {
-
+        return null;
     }
 
     public Object getCounter() {
