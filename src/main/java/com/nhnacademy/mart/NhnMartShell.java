@@ -1,8 +1,11 @@
 package com.nhnacademy.mart;
 
 import java.util.Scanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class NhnMartShell {
+    private static final Logger logger = LoggerFactory.getLogger(NhnMartShell.class);
 
     public static void main(String[] args) {
         NhnMart mart = new NhnMart();
@@ -36,6 +39,7 @@ public class NhnMartShell {
         BuyList buyList = new BuyList();
         for (int i = 0; i < list.length; i = i + 2) {
             buyList.add(list[i], Integer.parseInt(list[i + 1]));
+            logger.info("name : {} , amount : {}", list[i], Integer.parseInt(list[i + 1]));
         }
         s.close();
         return buyList;

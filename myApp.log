@@ -1,0 +1,9 @@
+2023-09-01 16:28:13,113 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:37] - NHN 마트에 오신 것을 환영합니다. 사고 싶은 물건을 골라주세요.
+2023-09-01 16:28:13,115 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:38] - 
+>
+2023-09-01 16:28:56,182 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:37] - NHN 마트에 오신 것을 환영합니다. 사고 싶은 물건을 골라주세요.
+
+>
+2023-09-01 16:33:44,452 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:42] - name : 양파 , amount : 2
+2023-09-01 16:33:44,458 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:42] - name : 계란 , amount : 2
+2023-09-01 16:33:44,459 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:42] - name : 파 , amount : 4
