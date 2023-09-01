@@ -17,17 +17,19 @@ public class Customer {
         this.basket = basket;
     }
 
-    public void pickFoods(Object foodStand) {
+    // TODO pickFoods 메서드 구현
+    public void pickFoods(FoodStand foodStand) {
+        for (BuyList.Item item : buyList.getItems()) {
+            for (int i = 0; i < item.getAmount(); i++) {
+                basket.add(foodStand.delete(item.getName()));
+            }
+        }
     }
 
+    // TODO payTox 메서드 구현
     public void payTox(Object counter) {
 
     }
-
-    // TODO pickFoods 메서드 구현
-
-
-    // TODO payTox 메서드 구현
 
 
 }

@@ -28,8 +28,8 @@ public class NhnMart {
         return new Basket();
     }
 
-    public Object getFoodStand() {
-        return null;
+    public FoodStand getFoodStand() {
+        return this.foodStand;
     }
 
     public Object getCounter() {
