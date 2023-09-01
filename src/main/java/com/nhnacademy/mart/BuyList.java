@@ -22,9 +22,7 @@ public class BuyList {
     /**
      * add 메서드입니다.
      *
-     * @param name String형입니다.
-     *
-     *
+     * @param name   String형입니다.
      * @param amount int형입니다.
      */
     public void add(String name, int amount) {
@@ -54,6 +52,10 @@ public class BuyList {
         }
 
         public Item(String name, int amount) {
+            if (amount < 1) {
+                logger.error("amount < 1!!!");
+                throw new IllegalArgumentException("amount < 1!!!");
+            }
             this.name = name;
             this.amount = amount;
         }
