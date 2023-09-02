@@ -21,6 +21,7 @@ public class BuyList {
 
     /**
      * add 메서드입니다.
+     * BuyList에 name, amount로 Item 객체 생성하여 추가.
      *
      * @param name   String형입니다.
      * @param amount int형입니다.

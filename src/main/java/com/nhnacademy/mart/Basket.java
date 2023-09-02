@@ -19,6 +19,7 @@ public class Basket {
 
     /**
      * add 메서드입니다.
+     * 장바구니에 상품 담기.
      *
      * @param food .
      */

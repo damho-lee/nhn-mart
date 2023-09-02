@@ -18,6 +18,7 @@ public class FoodStand {
 
     /**
      * add 메서드입니다.
+     * foodStand(진열대)에 상품 추가.
      *
      * @param food .
      */
