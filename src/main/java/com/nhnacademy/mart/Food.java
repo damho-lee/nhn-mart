@@ -14,8 +14,14 @@ public class Food {
     private final int price;
 
 
+    /**
+     * Food 클래스 Constructor입니다.
+     *
+     * @param name  .
+     * @param price .
+     */
     public Food(String name, int price) {
-        if(price < 0) {
+        if (price < 0) {
             logger.error("price가 0원보다 작을 수 없습니다.\n상품 준비 실패");
             throw new IllegalArgumentException("price가 0원보다 작을 수 없습니다.");
         }

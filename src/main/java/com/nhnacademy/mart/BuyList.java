@@ -52,6 +52,12 @@ public class BuyList {
             return amount;
         }
 
+        /**
+         * Item class Constructor입니다.
+         *
+         * @param name .
+         * @param amount .
+         */
         public Item(String name, int amount) {
             if (amount < 1) {
                 logger.error("amount < 1!!!");
