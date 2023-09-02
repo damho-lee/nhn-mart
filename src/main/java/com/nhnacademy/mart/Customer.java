@@ -41,10 +41,20 @@ public class Customer {
     public void pickFoods(FoodStand foodStand) {
         for (BuyList.Item item : buyList.getItems()) {
             for (int i = 0; i < item.getAmount(); i++) {
-                Food food = foodStand.delete(item.getName());
-                basket.add(food);
-                logger.info("name : {}, price : {} 상품 장바구니에 넣기 성공.",
-                        food.getName(), food.getPrice());
+                try {
+                    Food food = foodStand.delete(item.getName());
+                    basket.add(food);
+                    logger.info("name : {}, price : {} 상품 장바구니에 넣기 성공.",
+                            food.getName(), food.getPrice());
+                } catch (IllegalArgumentException illegalArgumentException) {
+                    if (i == 0) {
+                        logger.error("식품 매대에 없는 상품 구매");
+                        throw new IllegalArgumentException("식품 매대에 없는 상품 구매");
+                    } else {
+                        logger.error("상품 재고 부족");
+                        throw new IllegalArgumentException("상품 재고 부족");
+                    }
+                }
             }
         }
     }
