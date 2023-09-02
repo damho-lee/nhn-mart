@@ -60,6 +60,5 @@ public class BuyList {
             this.name = name;
             this.amount = amount;
         }
-
     }
 }
