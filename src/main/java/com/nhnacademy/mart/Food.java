@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
  * Food 클래스입니다.
  */
 public class Food {
-    private static final Logger logger = LoggerFactory.getLogger(FoodStand.class);
+    private static final Logger logger = LoggerFactory.getLogger(Food.class);
 
 
     private final String name;
