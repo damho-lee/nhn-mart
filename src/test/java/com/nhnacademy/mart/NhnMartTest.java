@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class NhnMartTest {
     @Test
     @DisplayName("NhnMartTest provideBasket Method(not null) Test")
-    public void nhnMartTestProvideBasketNotNullTest() {
+    void nhnMartTestProvideBasketNotNullTest() {
         NhnMart mart = new NhnMart();
         Basket basket = mart.provideBasket();
         Assertions.assertFalse(Objects.isNull(basket));
@@ -17,7 +17,7 @@ class NhnMartTest {
 
     @Test
     @DisplayName("NhnMart fillFoodStand Method Test")
-    public void nhnMartFillFoodStandTest() {
+    void nhnMartFillFoodStandTest() {
         NhnMart mart = new NhnMart();
         mart.prepareMart();
         ArrayList<Food> foodsTest = new ArrayList<>();
@@ -43,7 +43,7 @@ class NhnMartTest {
 
     @Test
     @DisplayName("NhnMart getCounter Method Test")
-    public void nhnMartGetCounterMethodTest() {
+    void nhnMartGetCounterMethodTest() {
         NhnMart mart = new NhnMart();
         Counter counter = mart.getCounter();
         Assertions.assertFalse(Objects.isNull(counter));

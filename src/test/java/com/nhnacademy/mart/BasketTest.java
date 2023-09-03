@@ -20,7 +20,7 @@ class BasketTest {
     @ParameterizedTest
     @MethodSource("foodSource")
     @DisplayName("Basket add Method Test")
-    public void basketAddMethodTest(String name, int price) {
+    void basketAddMethodTest(String name, int price) {
         NhnMart mart = new NhnMart();
         Basket basket = mart.provideBasket();
         List<Food> foods = basket.getFoods();

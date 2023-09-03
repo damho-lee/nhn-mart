@@ -19,14 +19,14 @@ class BuyListTest {
 
     @Test
     @DisplayName("Item Constructor Test (amount < 1)")
-    public void itemConstructorTest() {
+    void itemConstructorTest() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> new Item("사과", 0));
     }
 
     @ParameterizedTest
     @MethodSource("buyListSource")
     @DisplayName("BuyList add Method Test")
-    public void buyListAddMethodTest(String name, int amount) {
+    void buyListAddMethodTest(String name, int amount) {
         BuyList buyList = new BuyList();
         buyList.add(name, amount);
         Assertions.assertEquals(name, buyList.getItems().get(0).getName());

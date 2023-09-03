@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class CounterTest {
     @Test
     @DisplayName("Counter pay Method Test")
-    public void counterPayMethodTest() {
+    void counterPayMethodTest() {
         Basket basket = new Basket();
         String[] names = {"스윙칩", "구운감자", "프링글스", "자유시간"};
         int[] prices = {1700, 1000, 2300, 1000};

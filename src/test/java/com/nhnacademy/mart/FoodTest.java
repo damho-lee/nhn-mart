@@ -12,7 +12,7 @@ class FoodTest {
 
     @Test
     @DisplayName("Food Constructor Test(price < 0)")
-    public void foodConstructorExceptionTest() {
+    void foodConstructorExceptionTest() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> new Food("사과", -1));
     }
 
@@ -28,7 +28,7 @@ class FoodTest {
     @ParameterizedTest
     @MethodSource("foodSource")
     @DisplayName("Food Constructor Test")
-    public void foodConstructorTest(String name, int price) {
+    void foodConstructorTest(String name, int price) {
         Food food = new Food(name, price);
         Assertions.assertEquals(name, food.getName());
         Assertions.assertEquals(price, food.getPrice());

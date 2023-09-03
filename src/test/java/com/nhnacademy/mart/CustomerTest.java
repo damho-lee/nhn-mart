@@ -8,7 +8,7 @@ class CustomerTest {
 
     @Test
     @DisplayName("Customer pickFoods Method Test")
-    public void customerPickFoodsMethodTest() {
+    void customerPickFoodsMethodTest() {
         FoodStand foodStand = new FoodStand();
         foodStand.add(new Food("사과", 1000));
         foodStand.add(new Food("수박", 3000));
@@ -30,7 +30,7 @@ class CustomerTest {
 
     @Test
     @DisplayName("Customer pickFoods Method Exception Test(상품 매대에 상품 x)")
-    public void customerPickFoodsMethodExceptionTest1() {
+    void customerPickFoodsMethodExceptionTest1() {
         FoodStand foodStand = new FoodStand();
         foodStand.add(new Food("사과", 1000));
         foodStand.add(new Food("수박", 3000));
@@ -53,7 +53,7 @@ class CustomerTest {
 
     @Test
     @DisplayName("Customer pickFoods Method Exception Test(상품 재고 부족)")
-    public void customerPickFoodsMethodExceptionTest2() {
+    void customerPickFoodsMethodExceptionTest2() {
         FoodStand foodStand = new FoodStand();
         foodStand.add(new Food("사과", 1000));
         foodStand.add(new Food("수박", 3000));
@@ -76,7 +76,7 @@ class CustomerTest {
 
     @Test
     @DisplayName("Customer payTox Exception Method Test")
-    public void customerPayToxExceptionMethodTEst() {
+    void customerPayToxExceptionMethodTEst() {
         NhnMart mart = new NhnMart();
         mart.prepareMart();
         BuyList buyList = new BuyList();

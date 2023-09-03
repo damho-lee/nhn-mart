@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class FoodStandTest {
     @Test
     @DisplayName("FoodStand add Method Test")
-    public void foodStandAddMethodTest() {
+    void foodStandAddMethodTest() {
         FoodStand foodstand = new FoodStand();
         String[] names = {"환타", "사이다", "콜라", "쥬스"};
         int[] prices = {1100, 1000, 1300, 1500};
@@ -25,7 +25,7 @@ class FoodStandTest {
 
     @Test
     @DisplayName("FoodStand delete Method Test")
-    public void foodStandDeleteMethodTest() {
+    void foodStandDeleteMethodTest() {
         FoodStand foodStand = new FoodStand();
         String[] names = {"신라면", "진라면", "삼양라면", "참깨라면"};
         int[] prices = {1100, 1000, 1200, 1500};
@@ -39,7 +39,7 @@ class FoodStandTest {
 
     @Test
     @DisplayName("Foodstand delete Method Exception Test")
-    public void foodStandDeleteMethodExceptionTest() {
+    void foodStandDeleteMethodExceptionTest() {
         FoodStand foodStand = new FoodStand();
         String[] names = {"신라면", "진라면", "삼양라면", "참깨라면"};
         int[] prices = {1100, 1000, 1200, 1500};
