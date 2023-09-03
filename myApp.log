@@ -121,3 +121,34 @@
 2023-09-02 15:29:21,062 [main] INFO c.n.m.Customer [Customer.java:47] - name : 오렌지, price : 4000 상품 장바구니에 넣기 성공.
 2023-09-02 15:29:21,062 [main] ERROR c.n.m.FoodStand [FoodStand.java:46] - 식품 매대에 없는 상품 구매
 2023-09-02 15:29:21,062 [main] ERROR c.n.m.Customer [Customer.java:54] - 상품 재고 부족
+2023-09-02 18:51:43,983 [main] INFO c.n.m.Counter [Counter.java:23] - 1700원짜리 스윙칩 바코드 찍음
+2023-09-02 18:51:43,985 [main] INFO c.n.m.Counter [Counter.java:23] - 1000원짜리 구운감자 바코드 찍음
+2023-09-02 18:51:43,985 [main] INFO c.n.m.Counter [Counter.java:23] - 2300원짜리 프링글스 바코드 찍음
+2023-09-02 18:51:43,986 [main] INFO c.n.m.Counter [Counter.java:23] - 1000원짜리 자유시간 바코드 찍음
+2023-09-02 18:51:43,987 [main] INFO c.n.m.Counter [Counter.java:26] - 총 가격은 6000원 입니다.
+2023-09-02 18:51:43,994 [main] ERROR c.n.m.BuyList [BuyList.java:63] - amount < 1!!!
+2023-09-02 18:51:44,010 [main] INFO c.n.m.BuyList [BuyList.java:31] - BuyList에 사과 품목 2개 추가
+2023-09-02 18:51:44,014 [main] INFO c.n.m.BuyList [BuyList.java:31] - BuyList에 오렌지 품목 5개 추가
+2023-09-02 18:51:44,015 [main] INFO c.n.m.BuyList [BuyList.java:31] - BuyList에 스윙칩 품목 1개 추가
+2023-09-02 18:51:44,018 [main] ERROR c.n.m.FoodStand [FoodStand.java:46] - 식품 매대에 없는 상품 구매
+2023-09-02 18:51:44,021 [main] INFO c.n.m.BuyList [BuyList.java:31] - BuyList에 오렌지 품목 2개 추가
+2023-09-02 18:51:44,022 [main] INFO c.n.m.Customer [Customer.java:21] - buyList 생성
+2023-09-02 18:51:44,022 [main] INFO c.n.m.Customer [Customer.java:33] - 장바구니 들기
+2023-09-02 18:51:44,022 [main] INFO c.n.m.Customer [Customer.java:47] - name : 오렌지, price : 4000 상품 장바구니에 넣기 성공.
+2023-09-02 18:51:44,022 [main] INFO c.n.m.Customer [Customer.java:47] - name : 오렌지, price : 4000 상품 장바구니에 넣기 성공.
+2023-09-02 18:51:44,023 [main] INFO c.n.m.BuyList [BuyList.java:31] - BuyList에 빼뺴로 품목 1개 추가
+2023-09-02 18:51:44,023 [main] INFO c.n.m.Customer [Customer.java:21] - buyList 생성
+2023-09-02 18:51:44,023 [main] INFO c.n.m.Customer [Customer.java:33] - 장바구니 들기
+2023-09-02 18:51:44,023 [main] ERROR c.n.m.FoodStand [FoodStand.java:46] - 식품 매대에 없는 상품 구매
+2023-09-02 18:51:44,024 [main] ERROR c.n.m.Customer [Customer.java:51] - 식품 매대에 없는 상품 구매
+2023-09-02 18:51:44,025 [main] INFO c.n.m.BuyList [BuyList.java:31] - BuyList에 오렌지 품목 3개 추가
+2023-09-02 18:51:44,025 [main] INFO c.n.m.Customer [Customer.java:21] - buyList 생성
+2023-09-02 18:51:44,025 [main] INFO c.n.m.Customer [Customer.java:33] - 장바구니 들기
+2023-09-02 18:51:44,025 [main] INFO c.n.m.Customer [Customer.java:47] - name : 오렌지, price : 4000 상품 장바구니에 넣기 성공.
+2023-09-02 18:51:44,025 [main] INFO c.n.m.Customer [Customer.java:47] - name : 오렌지, price : 4000 상품 장바구니에 넣기 성공.
+2023-09-02 18:51:44,025 [main] ERROR c.n.m.FoodStand [FoodStand.java:46] - 식품 매대에 없는 상품 구매
+2023-09-02 18:51:44,026 [main] ERROR c.n.m.Customer [Customer.java:54] - 상품 재고 부족
+2023-09-02 18:51:44,039 [main] ERROR c.n.m.Food [Food.java:25] - price가 0원보다 작을 수 없습니다.
+상품 준비 실패
+2023-09-02 18:51:44,045 [main] INFO c.n.m.NhnMart [NhnMart.java:24] - 상품 준비
+2023-09-02 18:51:44,045 [main] INFO c.n.m.NhnMart [NhnMart.java:37] - 상품 준비 완료
