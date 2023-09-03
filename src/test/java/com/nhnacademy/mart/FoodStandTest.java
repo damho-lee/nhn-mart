@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class FoodStandTest {
+class FoodStandTest {
     @Test
     @DisplayName("FoodStand add Method Test")
     public void foodStandAddMethodTest() {

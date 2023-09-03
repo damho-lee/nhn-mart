@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class NhnMartTest {
+class NhnMartTest {
     @Test
     @DisplayName("NhnMartTest provideBasket Method(not null) Test")
     public void nhnMartTestProvideBasketNotNullTest() {

@@ -8,8 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
-public class BuyListTest {
+class BuyListTest {
     private static Stream<Arguments> buyListSource() {
         return Stream.of(
                 Arguments.of("사과", 2),
